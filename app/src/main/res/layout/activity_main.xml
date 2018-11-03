@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:background="@color/yellowCoVision">
+
+
+    <com.tomer.fadingtextview.FadingTextView
+        android:id="@+id/fading_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:texts="@array/intro_messages"
+        app:timeout="2000" android:gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/voiceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/mapsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationX="600dp">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/objectDetectionFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationX="-600dp">
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@drawable/circle_frame"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnMic"
+        android:layout_width="105dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="82dp"
+        android:background="@drawable/microphonelistening"
+        android:backgroundTint="@color/greyCoVision"
+        android:elevation="10dp"
+        android:padding="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

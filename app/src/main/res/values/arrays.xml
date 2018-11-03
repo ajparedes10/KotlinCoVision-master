@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="intro_messages">
+        <item>¿Cuál es tu destino?</item>
+        <item>¿Dónde te encuentras?</item>
+        <item>¿Qué objetos hay adelante?</item>
+    </string-array>
+</resources>
